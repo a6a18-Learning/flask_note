@@ -29,13 +29,13 @@ My Flask Note
 
 這裡是一些基本的例子:
 
-    @app.route ( '/' ) 
-    def  index (): 
-        return  'Index Page'
+    @app.route('/') 
+    def index(): 
+        return 'Index Page'
     
-    @app.route ( '/hello' ) 
-    def  hello (): 
-        return  'Hello World'
+    @app.route('/hello') 
+    def hello(): 
+        return 'Hello World'
 
 但是，不僅如此！你可以構造含有動態部分的URL，也可以在一個函數上附著多個規則。
 
