@@ -7,11 +7,14 @@ My Flask Note
 
 有兩種途徑來啟用調試模式。一種是直接在應用對像上設置:
 
-app.debug = True
+    app.debug = True
 
-app.run ()
+    app.run ()
 
 另一種是作為run 方法的一個參數傳入:
 
-app.run(debug=True)
+    app.run(debug=True)
+
+### 注意
+`但它依然允許執行任意代碼。這使它成為一個巨大的安全隱患，  因此它絕對不能用於生產環境。`
 
